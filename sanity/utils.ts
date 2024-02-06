@@ -34,7 +34,7 @@ interface UrlQueryParams {
   params: string;
   key?: string;
   value?: string | null;
-  keysToRemove?: [];
+  keysToRemove?: string[];
 }
 export function formUrlQuery({ params, key, value, keysToRemove }: UrlQueryParams) {
   const currentUrl = qs.parse(params);
